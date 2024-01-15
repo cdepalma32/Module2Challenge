@@ -1,0 +1,35 @@
+.flexNav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navLinks {
+    list-style:none;
+    display: flex;
+
+}
+
+.navLinks li {
+    padding: 10px;
+}
+
+/* .rightNav {
+    margin-left:auto;
+} */
+
+/* .headshot
+{
+
+} */
+
+.flexApps {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heroApp {
+    display: flex;
+    justify-content: center;
+    background-image: url("./1.jpg");
+}
