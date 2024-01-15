@@ -1,7 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .flexNav {
     display: flex;
     justify-content: space-between;
-    
+   
 }
 
 .navLinks {
@@ -23,13 +27,67 @@
 
 } */
 
-.flexApps {
+/* .flexApps {
     display: flex;
-    justify-content: space-evenly;
+
 }
 
-.heroApp {
-    display: flex;
-    justify-content: center;
+.flexApps > div {
+    width: 50%;
+} */
+
+#heroApp {
+    width: 100%;
     background-image: url("./1.jpg");
+    height: 200px;
+    flex: 2;
+} 
+
+#app2 {
+    background-image: url("./2.jpg");
+}
+
+#app3 {
+    background-image: url("./3.jpg");
+}
+
+.app-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.app-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    padding-right: 10px;
+}
+
+.app-row > .app-column > div {
+    height: 200px;
+}
+
+.left {
+    min-width: 200px;
+}
+
+.right {
+    max-width: fit-content;
+}
+
+#content > section {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    
+}
+
+
+#content {
+    max-width: 1024px;
+    margin: 0 auto;
 }
